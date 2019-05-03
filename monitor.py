@@ -196,7 +196,9 @@ PROJECT_NAME = client.project_path(MACHINE['project'])
 METRIC_ROOT = 'wdl_task'
 
 MEASUREMENT_TIME_SEC = 1
-REPORT_TIME_SEC_MIN = 60
+
+# how frequently to report (e.g., if 60, then send a report every minute)
+REPORT_TIME_SEC_MIN = 300
 REPORT_TIME_SEC = REPORT_TIME_SEC_MIN
 
 LABEL_DESCRIPTORS = [
